@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Saarang</string>
+    <string-array name="Events">
+        <item>LecDems</item>
+        <item>Workshops</item>
+        <item>RockShow</item>
+        <item>Classical Night</item>
+        <item>Informals</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">Map</string>
+</resources>

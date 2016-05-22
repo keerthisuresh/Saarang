@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backgrnd"
+    android:textColor="#ffffff">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="First Name"
+        android:ems="10"
+        android:textColor="#ffffff"
+        android:id="@+id/firstName"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="REGISTERATION"
+        android:id="@+id/title"
+        android:textSize="40dp"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Last Name"
+        android:ems="10"
+        android:id="@+id/lastName"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/firstName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:textColor="#ffffff"
+        android:text="e-mail ID"
+        android:layout_below="@+id/contact"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phoneNo"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:text="Phone Number"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/college"
+        android:layout_below="@+id/phoneNo"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true"
+        android:text="School/College " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Details"
+        android:id="@+id/contact"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/firstName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="20dp"
+        android:spinnerMode="dropdown"
+        android:background="#faf7f7"
+        android:alpha="0.6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the Event"
+        android:id="@+id/textView"
+        android:paddingBottom="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/college"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <Spinner
+        android:id="@+id/spinner2"
+            android:paddingBottom="20dp"
+            android:background="#faf7f7"
+            android:alpha="0.6"
+            android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:spinnerMode="dropdown"
+             />
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#faf7f7"
+            android:alpha="0.6"
+            android:paddingBottom="20dp"
+            android:spinnerMode="dropdown"
+            android:layout_below="@+id/spinner2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#faf7f7"
+            android:alpha="0.6"
+            android:paddingBottom="20dp"
+            android:layout_below="@+id/spinner3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/backgrnd">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LECDEMS"
+        android:id="@+id/EventTitle"
+        android:textSize="50dp"
+        android:textColor="#fbf4f4"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:textAlignment="center" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"
+        android:layout_below="@id/EventTitle">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is the event description : This event is really good and worth attending ."
+                android:id="@+id/EventDesc"
+                android:textSize="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentStart="true"
+                android:textColor="#fbf4f4" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date          :      DD/MM/YYYY"
+                android:id="@+id/date"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/EventDesc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time          :      9 a.m"
+                android:id="@+id/time"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/date"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location          :      Chemplast ground"
+                android:id="@+id/location"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prize Money          :      Rs. 10000"
+                android:id="@+id/prizemoney"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/location"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordinator name          :      Mr. Co-ord"
+                android:id="@+id/coordname"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/prizemoney"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coordinator email          :co_ord@saarang.org"
+                android:id="@+id/coordemail"
+                android:textSize="20dp"
+                android:textColor="#fdfafa"
+                android:layout_below="@+id/coordname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Call Coordinator"
+                android:onClick="onClickCall"
+                android:background="#000000"
+                android:alpha="0.6"
+                android:textColor="#fdfafa"
+                android:id="@+id/LecDemsBtn"
+                android:layout_below="@+id/coordemail"
+                android:layout_alignParentBottom="true"
+                android:layout_alignLeft="@+id/date"
+                android:layout_alignStart="@+id/date" />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/locationbtn"
+                android:id="@+id/locbtn"
+                android:layout_alignTop="@+id/LecDemsBtn"
+                android:layout_alignRight="@+id/location"
+                android:layout_alignEnd="@+id/location"
+                android:onClick="onClickMap"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTER"
+                android:onClick="onClickRegister"
+                android:background="#000000"
+                android:alpha="0.6"
+                android:textColor="#fdfafa"
+                android:id="@+id/RegisterBtn"
+                android:layout_alignTop="@+id/LecDemsBtn"
+                android:layout_toLeftOf="@+id/LecDemsBtn"
+                android:layout_toStartOf="@+id/LecDemsBtn"
+                android:paddingRight="20dp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SEND E-MAIL"
+                android:onClick="onClickEmail"
+                android:textColor="#ffffff"
+                android:background="#000000"
+                android:alpha="0.6"
+                android:id="@+id/LecdemsEmail"
+                android:paddingTop="20dp"
+
+                android:layout_below="@+id/locbtn"
+                android:layout_alignRight="@+id/coordname"
+                android:layout_alignEnd="@+id/coordname" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>
